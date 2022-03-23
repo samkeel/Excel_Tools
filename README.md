@@ -2,6 +2,13 @@
 
 A master folder for various Excel VBA tools that I have made over the years.
 
+1. Excel Dictionary
+
+   Read a source document into a dictionary and populate values into open workbook.
+
+2. Excel Dictionary Totals
+
+   Read a table into a dictionary and sum values where identical keys are identified. Outputting a totals table.
 
 _past repo's_
 
