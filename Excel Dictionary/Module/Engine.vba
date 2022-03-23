@@ -122,6 +122,11 @@ Private Function readExcelFile()
         Set oWB = Nothing
         Set oXL = Nothing
         
+        'set default compare mode.
+        'binary compare = Upper and lower case are different. this is the default option. Value and value are not the same
+        'TextCompare = Upper and lower case are identical. Value and value are the same.
+        dataMappings.CompareMode = CompareMethod.BinaryCompare
+        
         For i = LBound(datarange1) + 1 To UBound(datarange1)
             If Len(datarange1(i, iProduct)) > 0 Then
                 
